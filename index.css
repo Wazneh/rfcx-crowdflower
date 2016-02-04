@@ -1,0 +1,118 @@
+.logo {
+    margin: 0 auto 15px;
+    text-align: center;
+}
+
+.logo__img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.logo__text {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: sans-serif;
+    font-size: 26px !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #37b04f;
+    margin: 0 auto !important;
+}
+
+.audio-player {
+    margin-bottom: 20px;
+}
+
+.audio-player__controls {
+    text-align: center;
+}
+
+.wave-container {
+    background: #000;
+}
+
+.audio-player .wave-container {
+    margin-bottom: 10px;
+}
+
+#wave-timeline {
+    background: #fff;
+}
+
+#wave {
+    position: relative;
+    height: 300px;
+}
+
+#wave > wave {
+    overflow: hidden !important;
+}
+
+canvas {
+    display: block;
+}
+
+.controls-wrapper {
+    box-sizing: border-box;
+}
+
+.controls-wrapper .control-wrapper {
+    float: none !important;
+    margin: 0 auto !important;
+}
+
+.cml .control-wrapper .cml_row {
+    position: relative;
+    width: 31.33%;
+    float: left;
+    margin: 0 1% 10px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.cml .control-wrapper .legend {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+region.wavesurfer-region:before {
+    content: attr(data-region-label);
+    color: #2BB32B;
+    display: block;
+    text-align: center;
+    line-height: 280px;
+    font-size: 50px;
+    height: 200px;
+}
+
+region.wavesurfer-region .cross {
+    display: block;
+    color: #FF0000;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.readonly-wrapper input{
+    background: #ccc !important;
+    pointer-events: none;
+}
+
+._hidden {
+    display: none !important;
+}
+
+.hidden-checkbox {
+    min-height: 0 !important;
+    margin: 0 !important;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}

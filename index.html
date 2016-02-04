@@ -1,0 +1,120 @@
+<div class="logo">
+    <img class="logo__img" src="https://d265tty8j31r8c.cloudfront.net/cdn/img/logo/logo-square-trans.128.png" alt="Rainforest Connection"/>
+    <h2 class="logo__text">Rainforest Connection</h2>
+</div>
+
+<h4>Listen to a piece of audio file and select what have you heard there.</h4>
+<div class="audio-player">
+    <div class="wave-container">
+        <div id="wave-timeline"></div>
+        <div id="wave"
+             data-audio-url="{{audio}}"
+             data-img-url="{{spectrogram}}"
+             data-start="{{begins_at}}"
+             data-duration="{{duration}}"></div>
+    </div>
+    <div class="audio-player__controls">
+        <button type="button" class="btn btn-primary" data-action="play">Play / Pause</button>
+    </div>
+</div>
+<hr>
+<div id="noEvents">
+    <p>If you have not found any events, check this box:</p>
+    <cml:checkbox label="I haven't heard any events"/>
+</div>
+<div class="row-fluid">
+    <div class="span3 _hidden" id="event1">
+        <h3>First event</h3>
+        <div class="well bucket">
+            <cml:checkbox name="first_event" class="hidden-checkbox" validates="required" />
+            <cml:radios label="Select type 1:" validates="required" only-if="first_event">
+                <cml:radio label="Motorcycle" />
+                <cml:radio label="Car" />
+                <cml:radio label="Truck" />
+                <cml:radio label="Chainsaw" />
+                <cml:radio label="Animal" />
+                <cml:radio label="Wind" />
+                <cml:radio label="Thunder" />
+                <cml:radio label="Voices" />
+            </cml:radios>
+            <div class="readonly-wrapper js-readonly-input-wrapper js-event-start">
+                <cml:text label="Start Point 1 (read-only):" validates="required" only-if="first_event" />
+            </div>
+            <div class="readonly-wrapper js-readonly-input-wrapper js-event-end">
+                <cml:text label="End Point 1 (read-only):" validates="required" only-if="first_event" />
+            </div>
+        </div>
+    </div>
+    <div class="span3 _hidden" id="event2">
+        <h3>Second event</h3>
+        <div class="well bucket">
+            <cml:checkbox name="second_event" class="hidden-checkbox" validates="required" />
+            <cml:radios label="Select type 2:" validates="required" only-if="second_event">
+                <cml:radio label="Motorcycle" />
+                <cml:radio label="Car" />
+                <cml:radio label="Truck" />
+                <cml:radio label="Chainsaw" />
+                <cml:radio label="Animal" />
+                <cml:radio label="Wind" />
+                <cml:radio label="Thunder" />
+                <cml:radio label="Voices" />
+            </cml:radios>
+            <div class="readonly-wrapper js-readonly-input-wrapper js-event-start">
+                <cml:text label="Start Point 2 (read-only):" validates="required" only-if="second_event" />
+            </div>
+            <div class="readonly-wrapper js-readonly-input-wrapper js-event-end">
+                <cml:text label="End Point 2 (read-only):" validates="required" only-if="second_event" />
+            </div>
+        </div>
+    </div>
+    <div class="span3 _hidden" id="event3">
+        <h3>Third event</h3>
+        <div class="well bucket">
+            <cml:checkbox name="third_event" class="hidden-checkbox" validates="required" />
+            <cml:radios label="Select type 3:" validates="required" only-if="third_event">
+                <cml:radio label="Motorcycle" />
+                <cml:radio label="Car" />
+                <cml:radio label="Truck" />
+                <cml:radio label="Chainsaw" />
+                <cml:radio label="Animal" />
+                <cml:radio label="Wind" />
+                <cml:radio label="Thunder" />
+                <cml:radio label="Voices" />
+            </cml:radios>
+            <div class="readonly-wrapper js-readonly-input-wrapper js-event-start">
+                <cml:text label="Start Point 3 (read-only):" validates="required" only-if="third_event" />
+            </div>
+            <div class="readonly-wrapper js-readonly-input-wrapper js-event-end">
+                <cml:text label="End Point 3 (read-only):" validates="required" only-if="third_event" />
+            </div>
+        </div>
+    </div>
+    <div class="span3 _hidden" id="event4">
+        <h3>Fourth event</h3>
+        <div class="well bucket">
+            <cml:checkbox name="fourth_event" class="hidden-checkbox" validates="required" />
+            <cml:radios label="Select type 4:" validates="required" only-if="fourth_event">
+                <cml:radio label="Motorcycle" />
+                <cml:radio label="Car" />
+                <cml:radio label="Truck" />
+                <cml:radio label="Chainsaw" />
+                <cml:radio label="Animal" />
+                <cml:radio label="Wind" />
+                <cml:radio label="Thunder" />
+                <cml:radio label="Voices" />
+            </cml:radios>
+            <div class="readonly-wrapper js-readonly-input-wrapper js-event-start">
+                <cml:text label="Start Point 4 (read-only):" validates="required" only-if="fourth_event" />
+            </div>
+            <div class="readonly-wrapper js-readonly-input-wrapper js-event-end">
+                <cml:text label="End Point 4 (read-only):" validates="required" only-if="fourth_event" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
