@@ -5,8 +5,8 @@ export SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )";
 export GRP_ITERATION=$(($1 * 1));
 export SCR_ITERATION=$(($2 * 1));
 
-export ROW_COUNT=250;
-export GUARDIAN_ID=115;
+export ROW_COUNT=$4;
+export GUARDIAN_ID=$3;
 
 export ROW_OFFSET=$(($1 * $ROW_COUNT));
 export BEGINS_AT=$((15000 * ($SCR_ITERATION - 1)));
