@@ -17,4 +17,4 @@ cat $SCRIPT_DIR/_cf_1.csv >> $OUT_FILE;
 
 rm -rf $SCRIPT_DIR/_cf_*.csv;
 
-echo "Crowdflower row export file (csv) created: '$OUT_FILE'";
+echo "Crowdflower row export file (csv) created: '$OUT_FILE'";;
